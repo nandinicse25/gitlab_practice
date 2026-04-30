@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eCommerce Dashboard</title>
+  <link rel="stylesheet" href="static/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>eCommerce Dashboard</h1>
+    <p>Live overview of sales, orders, and inventory.</p>
+  </header>
+
+  <main>
+    <section class="cards" id="summary-cards"></section>
+
+    <section class="panel">
+      <h2>Top Products</h2>
+      <table>
+        <thead>
+          <tr><th>Product</th><th>Units Sold</th><th>Revenue</th><th>Stock</th></tr>
+        </thead>
+        <tbody id="products-body"></tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Recent Orders</h2>
+      <ul id="orders-list"></ul>
+    </section>
+  </main>
+
+  <script src="static/app.js"></script>
+</body>
+</html>
